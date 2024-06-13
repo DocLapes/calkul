@@ -1,0 +1,154 @@
+*
+{
+    box-sizing: border-box;
+}
+
+ActionBar
+{
+    height: 0;
+}
+
+.calculator
+{
+    padding: 0 25% 25% 25%;
+
+    background-color: rgb(255, 245, 232);
+}
+
+.user-last-input
+{
+    height: 20%;
+    margin-bottom: 10;
+
+    font-size: 25;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: hsl(50, 0%, 50%);
+}
+
+.user-last-input > * > *
+{
+    text-wrap: true;
+    text-align: justify;
+}
+
+.user-current-input
+{
+    height: 25%;
+
+    font-size: 40;
+    color: black;
+    flex-flow: row-reverse nowrap;
+    align-items: flex-end;
+}
+
+.user-current-input > * > *
+{
+    text-wrap: true;
+    text-align: justify;
+}
+
+
+
+.calculator-buttons
+{
+    height: 55%;
+
+    justify-content: space-between;
+}
+
+.calculator-buttons > *
+{
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+/*Calculator button*/
+.calculator-buttons > * > *
+{
+    flex-grow: 1;
+    border-radius: 40px;
+}
+
+.calculator-buttons .Number,
+.calculator-buttons .Function
+{
+    color: rgb(236, 154, 0);
+    background-color: hsl(0, 0%, 95%);
+}
+
+.calculator-buttons .Number:active,
+.calculator-buttons .Function:active
+{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.calculator-buttons .Number
+{
+    font-size: 25;
+}
+
+.calculator-buttons .Function
+{
+    font-size: 20;
+}
+
+.calculator-buttons .Char-Deleter,
+.calculator-buttons .Text-Deleter
+{
+    background-color: hsl(50, 0%, 65%);
+    color: hsl(50, 0%, 38%);
+}
+
+.calculator-buttons .Char-Deleter:active,
+.calculator-buttons .Text-Deleter:active
+{
+    background-color: hsl(50, 0%, 57%);
+}
+
+.calculator-buttons .Char-Deleter
+{
+    font-size: 20;
+}
+
+.calculator-buttons .Text-Deleter
+{
+    font-size: 23;
+}
+
+.calculator-buttons .Ariphmetic,
+.calculator-buttons .Bracket
+{
+    background-color: hsl(30, 100%, 68%);
+    color: hsl(30, 100%, 38%);
+}
+
+.calculator-buttons .Ariphmetic:active,
+.calculator-buttons .Bracket:active
+{
+    background-color: hsl(30, 100%, 55%);
+}
+
+.calculator-buttons .Ariphmetic
+{
+    font-size: 25;
+}
+
+.calculator-buttons .Bracket
+{
+    font-size: 19;
+    font-weight: bold;
+}
+
+.calculator-buttons .Equal
+{
+    background-color: hsl(30, 100%, 49%);
+    color: hsl(30, 100%, 25%);
+    font-size: 20;
+    font-weight: bold;
+}
+.calculator-buttons .Equal:active
+{
+    background-color: hsl(30, 100%, 40%);
+}
